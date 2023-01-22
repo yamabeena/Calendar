@@ -7,15 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B3B885F297CDDEB006BBBE3 /* CalenderController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3B885E297CDDEB006BBBE3 /* CalenderController.swift */; };
+		9BA1AD67297CF8B300FB576A /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 9BA1AD66297CF8B300FB576A /* Realm */; };
+		9BA1AD69297CF8B300FB576A /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 9BA1AD68297CF8B300FB576A /* RealmSwift */; };
+		9BA1AD6B297CF9C600FB576A /* Realm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA1AD6A297CF9C600FB576A /* Realm.swift */; };
 		9BAAF9D62929F109005336B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAAF9D52929F109005336B3 /* AppDelegate.swift */; };
 		9BAAF9D82929F109005336B3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAAF9D72929F109005336B3 /* SceneDelegate.swift */; };
 		9BAAF9DA2929F109005336B3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAAF9D92929F109005336B3 /* ViewController.swift */; };
 		9BAAF9DD2929F109005336B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BAAF9DB2929F109005336B3 /* Main.storyboard */; };
 		9BAAF9DF2929F10C005336B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BAAF9DE2929F10C005336B3 /* Assets.xcassets */; };
 		9BAAF9E22929F10C005336B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BAAF9E02929F10C005336B3 /* LaunchScreen.storyboard */; };
+		9BBD7593294EB154003C9914 /* FSCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = 9BBD7592294EB154003C9914 /* FSCalendar */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9B3B885E297CDDEB006BBBE3 /* CalenderController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalenderController.swift; sourceTree = "<group>"; };
+		9BA1AD6A297CF9C600FB576A /* Realm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Realm.swift; sourceTree = "<group>"; };
 		9BAAF9D22929F109005336B3 /* Calendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calendar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BAAF9D52929F109005336B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9BAAF9D72929F109005336B3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,6 +38,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BA1AD69297CF8B300FB576A /* RealmSwift in Frameworks */,
+				9BA1AD67297CF8B300FB576A /* Realm in Frameworks */,
+				9BBD7593294EB154003C9914 /* FSCalendar in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,11 +68,13 @@
 			children = (
 				9BAAF9D52929F109005336B3 /* AppDelegate.swift */,
 				9BAAF9D72929F109005336B3 /* SceneDelegate.swift */,
+				9B3B885E297CDDEB006BBBE3 /* CalenderController.swift */,
 				9BAAF9D92929F109005336B3 /* ViewController.swift */,
 				9BAAF9DB2929F109005336B3 /* Main.storyboard */,
 				9BAAF9DE2929F10C005336B3 /* Assets.xcassets */,
 				9BAAF9E02929F10C005336B3 /* LaunchScreen.storyboard */,
 				9BAAF9E32929F10C005336B3 /* Info.plist */,
+				9BA1AD6A297CF9C600FB576A /* Realm.swift */,
 			);
 			path = Calendar;
 			sourceTree = "<group>";
@@ -83,6 +95,11 @@
 			dependencies = (
 			);
 			name = Calendar;
+			packageProductDependencies = (
+				9BBD7592294EB154003C9914 /* FSCalendar */,
+				9BA1AD66297CF8B300FB576A /* Realm */,
+				9BA1AD68297CF8B300FB576A /* RealmSwift */,
+			);
 			productName = Calendar;
 			productReference = 9BAAF9D22929F109005336B3 /* Calendar.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +128,10 @@
 				Base,
 			);
 			mainGroup = 9BAAF9C92929F109005336B3;
+			packageReferences = (
+				9BBD7591294EB154003C9914 /* XCRemoteSwiftPackageReference "FSCalendar" */,
+				9BA1AD65297CF8B300FB576A /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
 			productRefGroup = 9BAAF9D32929F109005336B3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,7 +159,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BA1AD6B297CF9C600FB576A /* Realm.swift in Sources */,
 				9BAAF9DA2929F109005336B3 /* ViewController.swift in Sources */,
+				9B3B885F297CDDEB006BBBE3 /* CalenderController.swift in Sources */,
 				9BAAF9D62929F109005336B3 /* AppDelegate.swift in Sources */,
 				9BAAF9D82929F109005336B3 /* SceneDelegate.swift in Sources */,
 			);
@@ -356,6 +379,43 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9BA1AD65297CF8B300FB576A /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		9BBD7591294EB154003C9914 /* XCRemoteSwiftPackageReference "FSCalendar" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/WenchaoD/FSCalendar";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.7.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9BA1AD66297CF8B300FB576A /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9BA1AD65297CF8B300FB576A /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		9BA1AD68297CF8B300FB576A /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9BA1AD65297CF8B300FB576A /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+		9BBD7592294EB154003C9914 /* FSCalendar */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9BBD7591294EB154003C9914 /* XCRemoteSwiftPackageReference "FSCalendar" */;
+			productName = FSCalendar;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9BAAF9CA2929F109005336B3 /* Project object */;
 }
